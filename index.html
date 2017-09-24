@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <title>Tokyo</title>
 </head>
+
 <body>
     <div class="widget">
         <h1 class="visually-hidden">Weather in Tokyo</h1>
-
         <section class="weather-today">
             <h2 class="visually-hidden">Weather in Tokyo today</h2>
             <p class="weather-type"> Sunny</p>
@@ -15,40 +15,39 @@
         </section>
 
         <div class="weather-details">
+
             <section class="temperature">
                 <h2 class="visually-hidden">Weather details</h2>
                 <p class="degrees">28℃</p>
                 <figure class="graph">
                     <img src="img/graph.png" alt="Graph of weather change" width="230" height="95">
-                    <figcaption class="visually-hidden">Graph of weather change</figcaption>
                 </figure>
             </section>
 
             <section class="next-days">
                 <h2 class="visually-hidden">Weather for next days</h2>
-                <table>
-                    <tr class="type">
-                        <td>Sunny</td>
-                        <td>Overcast</td>
-                        <td>Overcast</td>
-                    </tr>
-                    <tr class="weekday">
-                        <td>Thu</td>
-                        <td>Fri</td>
-                        <td>Sat</td>
-                    </tr>
-                    <tr class="day-temperature">
-                        <td>28℃</td>
-                        <td>22℃</td>
-                        <td>30℃</td>
-                    </tr>
-                    <tr class="night-temperature">
-                        <td>18℃</td>
-                        <td>20℃</td>
-                        <td>27℃</td>
-                    </tr>
-                </table>
+                <ol class="weekdays">
+                    <li class="day">
+                        <h3><time datetime="2017-08-01">Thu</time></h3>
+                        <span class="weather-type">Sunny</span>
+                        <span class="day-temperature">28℃</span>
+                        <span class="night-temperature">18℃</span>
+                    </li>
+                    <li class="day">
+                        <h3><time datetime="2017-08-02">Fri</time></h3>
+                        <span class="weather-type">Overcast</span>
+                        <span class="day-temperature">22℃</span>
+                        <span class="night-temperature">20℃</span>
+                    </li>
+                    <li class="day">
+                        <h3><time datetime="2017-08-03">Sat</time></h3>
+                        <span class="weather-type">Overcast</span>
+                        <span class="day-temperature">30℃</span>
+                        <span class="night-temperature">27℃</span>
+                    </li>
+                </ol>
             </section>
+
         </div>
 
     </div>
